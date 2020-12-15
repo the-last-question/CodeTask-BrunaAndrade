@@ -1,10 +1,10 @@
-def __checkPerfectNumber(Number):
-    SumDivisors = 0
-    for i in range(1, Number):
-        if(Number % i == 0):
-            SumDivisors = SumDivisors + i
+def __isPerfectNumber(num):
+    Sum = 0
+    for i in range(1, num):
+        if(num % i == 0):
+            Sum = Sum + i
 
-    if (SumDivisors == Number):
+    if (Sum == num):
         return True
     else:
         return False
@@ -12,7 +12,7 @@ def __checkPerfectNumber(Number):
 def __main__():
     print("Numeros perfeitos entre 1 e 10000:")
     for i in range(1, 10000):
-        if(__checkPerfectNumber(i)):
+        if(__isPerfectNumber(i)):
              print(" %d é um número Perfeito:" %i)
     
         

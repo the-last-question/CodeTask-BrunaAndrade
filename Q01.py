@@ -11,10 +11,10 @@ def __Caesar__encrypt(text, shift):
 
 
 def __main__():
-   inputString = "CodeTask"
+   inputMessage = "CodeTask"
    print ("texto  : " + inputString)
-   print ("Tamanho da entrada : " + str(len(inputString)))
-   print ("Mensagem criptografada: " + __Caesar__encrypt(inputString,len(inputString)))
+   print ("Tamanho da entrada : " + str(len(inputMessage)))
+   print ("Mensagem criptografada: " + __Caesar__encrypt(inputMessage,len(inputMessage)))
        
         
 __main__()
